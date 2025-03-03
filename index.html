@@ -1,46 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>first-tailwind-project</title>
-    <link rel="stylesheet" href="CSS/main.css">
-</head>
-<body class="bg-[#2B2D33]">
-   <nav class="bg-[#2B2D33] shadow-xl">
-    <div class="container mx-auto">
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body class="bg-[#2B2D33]">
+    <!--! navigation part  -->
+    <nav class="bg-[#2B2D33] shadow-xl sticky top-0 left-0 z-50">
+      <div class="container mx-auto">
         <div class="sm:flex justify-between p-5 items-center">
-            <div class="text-center mb-3 sm:mb-0">
-                <a href="#" class="text-white text-xl sm:text-3xl"> <span class="text-red-500">S</span>mart Cod<span class="text-red-500">ers</span> </a>
-            </div>
+          <div class="text-center mb-3 sm:mb-0">
+            <a href="#" class="text-white text-xl sm:text-3xl">
+              <span class="text-red-500">S</span>mart Cod<span
+                class="text-red-500"
+                >ers</span
+              >
+            </a>
+          </div>
 
-            <ul class="sm:flex sm:text-xl  text-white text-center border-t sm:border-none">
-                <li class="mt-3 sm:mt-0"><a href="#" class="p-3 text-red-500 "> Home </a></li>
-                <li><a href="#" class="p-3 hover:text-red-500"> Product </a></li>
-                <li><a href="#" class="p-3 hover:text-red-500"> Blog </a></li>
-                <li><a href="#" class="p-3 hover:text-red-500"> Portfolio </a></li>
-                <li><a href="#" class="p-3 hover:text-red-500"> Contact </a></li>
-            </ul> 
+          <ul
+            class="sm:flex sm:text-xl text-white text-center border-t sm:border-none"
+          >
+            <li class="mt-3 sm:mt-0">
+              <a href="#" class="p-3 text-red-500"> Home </a>
+            </li>
+            <li><a href="#" class="p-3 hover:text-red-500"> Product </a></li>
+            <li><a href="#" class="p-3 hover:text-red-500"> Blog </a></li>
+            <li><a href="#" class="p-3 hover:text-red-500"> Portfolio </a></li>
+            <li><a href="#" class="p-3 hover:text-red-500"> Contact </a></li>
+          </ul>
         </div>
-    </div>
-   </nav>
-   <!--! Header Part Code Start -->
-   <header>
-     
-        <div class=" container mx-auto border border-indigo-700 border-t-0  h-[80vh] sm:flex justify-around items-center text-center text-white mt-10 sm:mt-0">
-            <div>
-               <h1 class="text-2xl sm:text-5xl mb-5 sm:mb-14"> Smart Coders: <br> Learn Programming </h1>
-               <button class="bg-indigo-900 px-7 py-3 rounded-full shadow-xl hover:bg-indigo-950"> join : Sultan It Zone Team <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline-block w-7 text-red-800 ml-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
-              </button>
-            </div>
+      </div>
+    </nav>
+    <!--! Header Part Code Start -->
+    <header>
+      <div
+        class="container mx-auto border border-indigo-700 border-t-0 h-[80vh] sm:flex justify-around items-center text-center text-white mt-10 sm:mt-0"
+      >
+        <div>
+          <h1 class="text-2xl sm:text-5xl mb-5 sm:mb-14">
+            Smart Coders: <br />
+            Learn Programming
+          </h1>
+          <button
+            class="bg-indigo-900 px-7 py-3 rounded-full shadow-xl hover:bg-indigo-950"
+          >
+            join : Sultan It Zone Team
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 inline-block w-7 text-red-800 ml-2 animate-ping"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
 
-            <div>
-                <img class="animate-pulse" src="image/hero-img.png" alt="">
-            </div>
+        <div>
+          <img class="animate-pulse" src="image/hero-img.png" alt="" />
         </div>
-     
-   </header>
-</body>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <!--! services Section  -->
+
+      <section class="my-24">
+        <h2 class="text-red-500 text-center text-3xl mb-12 ">Our services</h2>
+        <!--! box-1 -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-800 p-8 rounded-lg border-4 border-blue-950 hover:border-indigo-700 cursor-pointer"
+          >
+            <img class="w-1/2 mx-auto" src="image/frontEnd.png" alt="" />
+            <h2 class="text-white text-lg underline underline-offset-8 my-5">
+              Front End Development
+            </h2>
+            <p class="text-white">
+              Front-end development is the process of building a website's user
+              interface and experience using HTML, CSS, and JavaScript to create
+              interactive and responsive designs
+            </p>
+            <button class="bg-[#2a1d8e] py-1 px-4 text-white mt-5 rounded-md">
+              <a href="#"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </button>
+          </div>
+
+          <!--! box-2 -->
+
+          <div
+            class="bg-gray-800 p-8 rounded-lg border-4 border-blue-950 hover:border-indigo-700 cursor-pointer"
+          >
+            <img class="w-1/2 mx-auto" src="image/backEnd.png" alt="" />
+            <h2 class="text-white text-lg underline underline-offset-8 my-5">
+            Back End Development
+            </h2>
+            <p class="text-white">
+              Front-end development is the process of building a website's user
+              interface and experience using HTML, CSS, and JavaScript to create
+              interactive and responsive designs
+            </p>
+            <button class="bg-[#2a1d8e] py-1 px-4 text-white mt-5 rounded-md">
+              <a href="#"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </button>
+          </div>
+           <!--! box-3 -->
+          <div
+            class="bg-gray-800 p-8 rounded-lg border-4 border-blue-950 hover:border-indigo-700 cursor-pointer"
+          >
+            <img class="w-1/2 mx-auto" src="image/js engineer.webp" alt="" />
+            <h2 class="text-white text-lg underline underline-offset-8 my-5">
+            JavaScript Engineer
+            </h2>
+            <p class="text-white">
+              Front-end development is the process of building a website's user
+              interface and experience using HTML, CSS, and JavaScript to create
+              interactive and responsive designs
+            </p>
+            <button class="bg-[#2a1d8e] py-1 px-4 text-white mt-5 rounded-md">
+              <a href="#"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </button>
+          </div>
+              
+          <!--! box-4 -->
+          <div
+            class="bg-gray-800 p-8 rounded-lg border-4 border-blue-950 hover:border-indigo-700 cursor-pointer"
+          >
+            <img class="w-1/2 mx-auto" src="image/frontEnd.png" alt="" />
+            <h2 class="text-white text-lg underline underline-offset-8 my-5">
+              Mechine Learning Development
+            </h2>
+            <p class="text-white">
+              Front-end development is the process of building a website's user
+              interface and experience using HTML, CSS, and JavaScript to create
+              interactive and responsive designs
+            </p>
+            <button class="bg-[#2a1d8e] py-1 px-4 text-white mt-5 rounded-md">
+              <a href="#"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </button>
+          </div>
+          <!--!box-5-->
+          <div
+            class="bg-gray-800 p-8 rounded-lg border-4 border-blue-950 hover:border-indigo-700 cursor-pointer"
+          >
+            <img class="w-1/2 mx-auto" src="image/python.jpg" alt="" />
+            <h2 class="text-white text-lg underline underline-offset-8 my-5">
+                Python Engineer 
+            </h2>
+            <p class="text-white">
+              Front-end development is the process of building a website's user
+              interface and experience using HTML, CSS, and JavaScript to create
+              interactive and responsive designs
+            </p>
+            <button class="bg-[#2a1d8e] py-1 px-4 text-white mt-5 rounded-md">
+              <a href="#"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-800 p-8 rounded-lg border-4 border-blue-950 hover:border-indigo-700 cursor-pointer"
+          >
+            <img class="w-1/2 mx-auto" src="image/frontEnd.png" alt="" />
+            <h2 class="text-white text-lg underline underline-offset-8 my-5">
+             Softwer Development
+            </h2>
+            <p class="text-white">
+              Front-end development is the process of building a website's user
+              interface and experience using HTML, CSS, and JavaScript to create
+              interactive and responsive designs
+            </p>
+            <button class="bg-[#2a1d8e] py-1 px-4 text-white mt-5 rounded-md">
+              <a href="#"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
